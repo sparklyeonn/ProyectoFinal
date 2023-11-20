@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Proyecto Final API",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/productos": {
+        "get": {
+          "summary": "Obtiene todos los productos.",
+          "responses": {
+            "200": {
+              "description": "Lista de productos obtenida con éxito.",
+              "content": {
+                "application/json": {
+                  "example": [
+                    {
+                      "ProductoID": 1,
+                      "Titulo": "Vinilo1",
+                      "Precio": 33.990,
+                      "Disponibilidad": true
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
